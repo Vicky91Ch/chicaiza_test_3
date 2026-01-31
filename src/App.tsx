@@ -25,19 +25,19 @@ export default function App() {
           </Typography>
 
           <Button component={NavLink} to="/" end sx={linkBtnSx}>
-            Home
+          Home
           </Button>
           <Button component={NavLink} to="/productos" sx={linkBtnSx}>
-            Productos
+          Categorias
           </Button>
           <Button component={NavLink} to="/suma" sx={linkBtnSx}>
-            Suma
+          Calculos
           </Button>
           <Button component={NavLink} to="/multiplica" sx={linkBtnSx}>
-            Multiplica
+          Nueva Categoria
           </Button>
           <Button component={NavLink} to="/acerca" sx={linkBtnSx}>
-            Acerca de
+            Información
           </Button>
 
           <Box sx={{ flex: 1 }} />

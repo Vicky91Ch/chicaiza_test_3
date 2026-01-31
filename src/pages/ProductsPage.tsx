@@ -71,9 +71,6 @@ export default function ProductsPage() {
               <TableCell>Name</TableCell>
               <TableCell>height</TableCell>
               <TableCell>mass</TableCell>
-              <TableCell align="right">Precio</TableCell>
-              <TableCell align="right">Stock</TableCell>
-              <TableCell>Foto</TableCell>
             </TableRow>
           </TableHead>
 
@@ -82,13 +79,12 @@ export default function ProductsPage() {
               <TableRow key={p?.id ?? idx} hover>
                 <TableCell>{p?.id ?? "-"}</TableCell>
                 <TableCell>{p?.name ?? "-"}</TableCell>
-                <TableCell>{p?.category_name ?? "-"}</TableCell>
-                <TableCell align="right">{p?.price ?? "-"}</TableCell>
-                <TableCell align="right">{p?.stock ?? "-"}</TableCell>
+                <TableCell>{p?.height ?? "-"}</TableCell>
+                <TableCell>{p?.mass ?? "-"}</TableCell>
                 <TableCell>
-                  {p?.url_image ? (
+                  {p?.image ? (
                     <img
-                      src={p.url_image}
+                      src={p.image}
                       alt={p?.name ?? "producto"}
                       style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8, border: "1px solid rgba(0,0,0,.15)" }}
                       onError={(e) => {
